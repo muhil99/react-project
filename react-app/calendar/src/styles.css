@@ -1,0 +1,104 @@
+/* Modal Container */
+.modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Modal Overlay */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  /* Modal Close Button */
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Calendar Container */
+  .calendar-container {
+    margin: 20px;
+  }
+  
+  /* FullCalendar */
+  .fc-day {
+    cursor: pointer;
+  }
+  
+  /* Event Modal Styles */
+  .event-modal-container {
+    text-align: center;
+  }
+  
+  .event-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .event-details {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Additional Styles */
+  body {
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    /* overflow: hidden; */
+    /* background-color: aqua; */
+  }
+
+  .holiday {
+    background-color: #333; /* Example color for Sundays */
+  }
+
+  .app {
+    background-color: #fafafa;
+  }
+
+  .calendar {
+    background-color: #fafafa;
+    background-position: center;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+}
+.modal_box {
+  background-color: #fff;
+  font-family: "Jost", sans-serif;
+}
+
+.special_events {
+  padding: 10px;
+}
+.special_days {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+}
+  
+ .rbc-toolbar-label {
+    font-size: 27px;
+  }
+  
