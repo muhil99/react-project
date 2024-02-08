@@ -4,16 +4,18 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const path = require('path')
 
+
+
+app.use(express.json());
 const _dirname = path.dirname("")
 const buildpath = path.join(_dirname, "../calendar/build");
 app.use(express.static(buildpath))
+app.use(
+    cors({
+        "origin": "*",
+    })
+);
 
-const corsOptions = {
-    origin: 'http://13.127.198.62' // Allow requests from this origin
-  };
-
-  app.use(cors(corsOptions));
-app.use(express.json());
 
 const events = [
     { 
