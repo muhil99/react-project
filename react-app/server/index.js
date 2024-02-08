@@ -130,6 +130,11 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5000;
+const path = require('path')
+
+const _dirname = path.dirname("")
+const buildpath = path.join(_dirname, "../calendar/build");
+app.use(express.static(buildpath))
 
 app.use(cors());
 app.use(express.json());
@@ -192,6 +197,9 @@ const events = [
 app.get('/events', (req, res) => {
     res.json(events);
 });
+
+
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
